@@ -1,6 +1,5 @@
 import styles from './About.module.css'
 import AboutImg from '../../assets/about.png'
-import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
