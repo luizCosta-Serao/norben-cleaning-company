@@ -1,0 +1,33 @@
+.cleaningServices {
+  max-width: 1200px;
+  width: 100%;
+  margin: 150px auto;
+}
+
+.listServices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemService img {
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  padding: .3rem;
+  object-fit: contain;
+  margin-bottom: 22px;
+  transition: .3s linear;
+  border: 1px solid transparent;
+}
+
+.itemService img:hover {
+  border: 8px solid #F69400;
+}
+
+.itemService h2 {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}

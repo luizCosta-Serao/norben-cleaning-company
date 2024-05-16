@@ -1,0 +1,58 @@
+.quoteEasy {
+  margin: 150px 0;
+}
+
+.quoteSteps {
+  display: flex;
+  justify-content: center;
+  gap: 173px;
+}
+
+.quoteTitle {
+  text-align: center;
+  color: #2F4672;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 67px;
+}
+
+.boxQuoteSteps {
+  position: relative;
+}
+
+.boxQuoteSteps:nth-child(1)::after,
+.boxQuoteSteps:nth-child(2)::after {
+  content: '';
+  width: 175px;
+  height: 6px;
+  display: inline-block;
+  position: absolute;
+  top: 100px;
+  right: -175px;
+  background-color: #E0E0E0;
+}
+
+.boxQuoteSteps span {
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+  background-color: #F69400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  border: 14px solid #fff;
+  padding: 1rem;
+  box-shadow: 0 0 0 8px #E0E0E0;
+  margin-bottom: 28px;
+}
+
+.boxQuoteSteps p {
+  text-align: center;
+  max-width: 200px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}

@@ -1,0 +1,174 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/contact.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 180px 0 0 0;
+}
+
+.contactInfo > h2 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contactInfo > p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  max-width: 463px;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.boxInfo {
+  display: flex;
+  gap: 29px;
+  margin-bottom: 49px;
+}
+
+.infoImg {
+  background-color: #F69400;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContent h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 7px;
+}
+
+.infoContent p {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.contactForm {
+  background-color: #F5F8FD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm form {
+  max-width: 547px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.formName,
+.emailPhone {
+  display: flex;
+  gap: 29px;
+}
+
+.formName input,
+.emailPhone input {
+  width: 50%;
+  border-radius: 50px;
+  border: none;
+  padding: 18px 0 18px 32px;
+  color: #BDBDBD;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid transparent;
+  transition: .3s;
+}
+
+.formName input:hover,
+.formName input:focus,
+.emailPhone input:hover,
+.emailPhone input:focus {
+  border: 2px solid #F69400;
+}
+
+.formName input::placeholder,
+.emailPhone input::placeholder {
+  color: #BDBDBD;
+  font-size: 20px;
+}
+
+.message {
+  outline: none;
+  height: 208px;
+  border-radius: 30px;
+  color: #BDBDBD;
+  font-size: 20px;
+  padding: 18px 32px;
+  transition: .3s;
+  border: 2px solid transparent;
+}
+
+.message::placeholder {
+  color: #BDBDBD;
+  font-size: 20px;
+}
+
+.message:hover,
+.message:focus {
+  border: 2px solid #F69400;
+}
+
+.send {
+  background-color: #F69400;
+  color: #fff;
+  border: none;
+  max-width: 230px;
+  width: 100%;
+  padding: 18px 45px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.sending {
+  background-color: #3F5D97;
+  color: #fff;
+  border: none;
+  max-width: 230px;
+  width: 100%;
+  padding: 18px 45px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.send:hover {
+  background-color: #3F5D97;
+}
+
+.success {
+  color: #4BB543;
+  font-weight: 600;
+  width: 540px;
+  margin-top: 1rem;
+}
+
+.fail {
+  color: #FF0000;
+  font-weight: 600;
+  width: 540px;
+  margin-top: 1rem;
+}

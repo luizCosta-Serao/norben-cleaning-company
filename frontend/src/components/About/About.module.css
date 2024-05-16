@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  gap: 65px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.aboutTitle {
+  color: #2F4672;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 29px;
+}
+
+.aboutDescription {
+  color: #828282;
+  font-size: 20px;
+  margin-bottom: 29px;
+  max-width: 512px;
+  width: 100%;
+}
+
+.aboutSubtitle {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
