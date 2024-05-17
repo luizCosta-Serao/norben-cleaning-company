@@ -25,9 +25,10 @@ const Contact = () => {
       setError(false);
       setLoading(true);
       const response = await fetch(`${url}/contact`, {
+        mode: 'no-cors',
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-type': 'application/json',
         },
         body: JSON.stringify({
           firstName,
@@ -37,6 +38,7 @@ const Contact = () => {
           message
         })
       })
+      console.log(response)
       if (!response.ok) {
         const json = await response.json() as ErrorType
         throw new Error(json.error)
@@ -87,7 +89,7 @@ const Contact = () => {
         </ul>
       </div>
       <div className={styles.contactForm}>
-        <form onSubmit={postContact} action="">
+        <form onSubmit={postContact}>
           <div className={styles.formName}>
             <input type="text" name='firstName' placeholder='First Name' value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
             <input type="text" name='lastName' placeholder='Last Name' value={lastName} onChange={(e) => setLastName(e.target.value)} />
