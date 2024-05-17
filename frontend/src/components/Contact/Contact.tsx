@@ -25,7 +25,6 @@ const Contact = () => {
       setError(false);
       setLoading(true);
       const response = await fetch(`${url}/contact`, {
-        mode: 'no-cors',
         method: 'POST',
         headers: {
           'Content-type': 'application/json',
