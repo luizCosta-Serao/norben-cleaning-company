@@ -3,10 +3,8 @@ import CommercialServices from '../../assets/commercial-services.png'
 import JanitorialServices from '../../assets/janitorial-services.png'
 import FloorCleaning from '../../assets/floor-cleaning.png'
 import DisinfectionServices from '../../assets/disinfection-services.png'
-import React from 'react'
 
 const CleaningServices = () => {
-  const [position, setPosition] = React.useState(0);
 
   return (
     <section className={styles.cleaningServices}>
