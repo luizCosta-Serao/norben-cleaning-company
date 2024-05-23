@@ -2,15 +2,33 @@ import styles from './Header.module.css'
 import Clock from '../../assets/clock.svg'
 import Telephone from '../../assets/telephone.svg'
 import NorbenLogo from '../../assets/norben-logo.png'
+import MenuMobile from '../../assets/menu-mobile.svg'
 import { Link } from 'react-router-dom'
+import React from 'react'
 
 const Header = () => {
+  const [menuActive, setMenuActive] = React.useState(false)
+
   function scrollLink(top: number) {
     window.scrollTo({
       top: top,
       behavior: 'smooth'
     })
   }
+
+  React.useEffect(() => {
+    function disabledMenu() {
+      setMenuActive(false)
+    }
+    
+    window.addEventListener('scroll', disabledMenu)
+    window.addEventListener('resize', disabledMenu)
+
+    return () => {
+      window.removeEventListener('scroll', disabledMenu)
+      window.removeEventListener('resize', disabledMenu)
+    }
+  })
 
   return (
     <section className={styles.containerHeader}>
@@ -31,7 +49,8 @@ const Header = () => {
         <div className={styles.logo}>
           <img src={NorbenLogo} alt="Norben Logo" />
         </div>
-        <nav className={styles.menu}>
+        <div onClick={() => setMenuActive(!menuActive)} className={styles.menuMobile}><img src={MenuMobile} alt="Menu" /></div>
+        <nav className={`${styles.menu} ${menuActive ? styles.active : ''}`}>
           <ul>
             <li onClick={() => scrollLink(0)}><Link to='/ '>Home</Link></li>
             <li onClick={() => scrollLink(1100)}><Link to='#cleaningServices'>About</Link></li>

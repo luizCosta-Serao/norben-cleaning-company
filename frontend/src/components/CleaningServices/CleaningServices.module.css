@@ -2,11 +2,14 @@
   max-width: 1200px;
   width: 100%;
   margin: 150px auto;
+  padding: 0 1rem;
 }
 
 .listServices {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .itemService img {

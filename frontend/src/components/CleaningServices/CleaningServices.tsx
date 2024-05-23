@@ -5,6 +5,7 @@ import FloorCleaning from '../../assets/floor-cleaning.png'
 import DisinfectionServices from '../../assets/disinfection-services.png'
 
 const CleaningServices = () => {
+
   return (
     <section className={styles.cleaningServices}>
       <ul className={styles.listServices}>

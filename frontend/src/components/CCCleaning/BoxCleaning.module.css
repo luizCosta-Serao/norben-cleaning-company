@@ -1,6 +1,8 @@
 .boxCleaning {
   background-color: #fff;
   border-radius: 20px;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .boxCleaning img {
