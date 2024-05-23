@@ -1,11 +1,14 @@
 .footer {
   background-color: #3F5D97;
+  width: 100%;
+  padding: 0 1.5rem;
 }
 
 .footerActions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 200px;
+  gap: 150px;
   padding: 125px 1rem 33px 1rem;
 }
 
@@ -60,4 +63,29 @@
   color: #bdbdbd;
   padding: 1rem 1rem 2rem 1rem ;
   text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .footerActions {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .footerActions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  .footerActions > div {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .socialLinks ul {
+    max-width: 240px;
+    margin: 0 auto;
+  }
 }

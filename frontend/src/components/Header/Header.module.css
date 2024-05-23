@@ -68,3 +68,60 @@
 .header .menu ul li:hover {
   color: #F69400;
 }
+
+.menuMobile {
+  display: none;
+}
+
+@media (max-width: 876px) {
+  .containerHeader {
+    height: 130px;
+  }
+
+  .infoHeader {
+    display: none;
+  }
+
+  .menuMobile {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuMobile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header .logo img {
+    width: 170px;
+    height: 100px;
+  }
+
+  .header .menu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 100%;
+    left: 0;
+    top: 130px;
+    padding: 1.5rem .5rem;
+    background-color: #3F5D97;
+    transition: .3s;
+  }
+
+  .header .menu.active {
+    visibility: visible;
+    opacity: 1;
+    height: 300px;
+  }
+  
+  .header .menu ul {
+    flex-direction: column;
+  }
+  
+  .header .menu ul li { 
+    color: #fff;
+  }
+
+}

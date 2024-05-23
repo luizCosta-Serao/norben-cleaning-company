@@ -10,7 +10,7 @@
   background-image: url('../../assets/contact.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 180px 0 0 0;
+  padding: 180px 1.5rem 0 1.5rem;
 }
 
 .contactInfo > h2 {
@@ -60,6 +60,7 @@
 
 .contactForm {
   background-color: #F5F8FD;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,6 +116,7 @@
   padding: 18px 32px;
   transition: .3s;
   border: 2px solid transparent;
+  resize: none;
 }
 
 .message::placeholder {
@@ -171,4 +173,43 @@
   font-weight: 600;
   width: 540px;
   margin-top: 1rem;
+}
+
+@media (max-width: 876px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  
+  .contactInfo {
+    background-position: center;
+    padding: 3rem 1.5rem 0 1.5rem;
+  }
+  
+  .contactForm {
+    padding: 2rem 1.5rem;
+  }
+  
+  .send {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .formName {
+    flex-direction: column;
+  }
+  
+  .formName input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .emailPhone {
+    flex-direction: column;
+  }
+
+  .emailPhone input {
+    width: 100%;
+    max-width: 100%;
+  }
 }

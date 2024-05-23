@@ -1,6 +1,6 @@
 .ccCleaning {
   background-color: #E5E7EB;
-  padding: 127px 0 150px 0;
+  padding: 127px 1rem 150px 1rem;
 }
 
 .ccTitle {
@@ -20,7 +20,8 @@
 
 .ccList {
   display: flex;
-  gap: 29px;
+  flex-wrap: wrap;
+  gap: 20px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;

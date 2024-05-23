@@ -1,5 +1,6 @@
 .quoteEasy {
-  margin: 150px 0;
+  margin: 150px auto 0 auto;
+  width: 80%;
 }
 
 .quoteSteps {
@@ -55,4 +56,80 @@
   font-size: 25px;
   font-weight: 500;
   color: #333;
+}
+
+@media (max-width: 1000px) {
+  .quoteSteps {
+    gap: 100px;
+  }
+  
+  .quoteTitle {
+    font-size: 40px;
+  }
+  
+  .boxQuoteSteps {
+    position: relative;
+  }
+  
+  .boxQuoteSteps:nth-child(1)::after,
+  .boxQuoteSteps:nth-child(2)::after {
+    width: 81%;
+    height: 6px;
+    top: 70px;
+    right: -125px;
+  }
+  
+  .boxQuoteSteps span {
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    border: 10px solid #fff;
+    box-shadow: 0 0 0 6px #E0E0E0;
+  }
+  
+  .boxQuoteSteps p {
+    max-width: 160px;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .quoteSteps {
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .quoteTitle {
+    font-size: 35px;
+  }
+  
+  .boxQuoteSteps {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .boxQuoteSteps:nth-child(1)::after,
+  .boxQuoteSteps:nth-child(2)::after {
+    width: 7px;
+    height: 80px;
+    top: 150px;
+    left: 70px;
+  }
+
+  .boxQuoteSteps p {
+    max-width: 160px;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
 }
