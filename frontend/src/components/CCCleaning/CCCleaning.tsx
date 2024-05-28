@@ -6,6 +6,7 @@ import BathroomCleaning from '../../assets/bathroom-cleaning.png'
 import CarpetCleaning from '../../assets/carpet-cleaning.png'
 
 const CCCleaning = () => {
+
   return (
     <section id='cleaningServices' className={styles.ccCleaning}>
       <h1 className={styles.ccTitle}>CC Cleaning Services</h1>
