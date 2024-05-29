@@ -1,6 +1,6 @@
 .containerHeader {
   position: fixed;
-  z-index: 80;
+  z-index: 10000;
   top: 0;
   width: 100%;
   background-color: #fff;

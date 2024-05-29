@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 import Facebook from '../../assets/facebook.svg'
 import Instagram from '../../assets/instagram.svg'
@@ -12,40 +11,40 @@ const Footer = () => {
         <div className={styles.links}>
           <h2>Links</h2>
           <ul>
-            <li><Link to='/'>About us</Link></li>
-            <li><Link to='/'>Categories</Link></li>
-            <li><Link to='/'>Services List</Link></li>
+            <li><a href='/'>About us</a></li>
+            <li><a href='/'>Categories</a></li>
+            <li><a href='/'>Services List</a></li>
           </ul>
         </div>
         <div className={styles.account}>
           <h2>Account</h2>
           <ul>
-            <li><Link to='/'>Login</Link></li>
-            <li><Link to='/'>Register</Link></li>
+            <li><a href='/'>Login</a></li>
+            <li><a href='/'>Register</a></li>
           </ul>
         </div>
         <div className={styles.legal}>
           <h2>Legal</h2>
           <ul>
-            <li><Link to='/'>Term and conditions</Link></li>
-            <li><Link to='/'>privacy policy</Link></li>
+            <li><a href='/'>Term and conditions</a></li>
+            <li><a href='/'>privacy policy</a></li>
           </ul>
         </div>
         <div className={styles.socialLinks}>
           <h2>Social Links</h2>
           <ul>
-            <li><Link to='/'>
+            <li><a href='/'>
               <img src={Facebook} alt="Facebook" />
-            </Link></li>
-            <li><Link to='/'>
+            </a></li>
+            <li><a href='/'>
               <img src={Instagram} alt="Instagram" />
-            </Link></li>
-            <li><Link to='/'>
+            </a></li>
+            <li><a href='/'>
               <img src={Twitter} alt="Twitter" />
-            </Link></li>
-            <li><Link to='/'>
+            </a></li>
+            <li><a href='/'>
               <img src={Pinterest} alt="Pinterest" />
-            </Link></li>
+            </a></li>
           </ul>
         </div>
       </section>
