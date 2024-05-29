@@ -8,8 +8,17 @@ import ImpressiveClean from '../components/ImpressiveClean/ImpressiveClean'
 import Contact from '../components/Contact/Contact'
 
 const Home = () => {
+  const divRef = React.useRef<null | HTMLDivElement>(null)
+
+  React.useEffect(() => {
+    if (divRef && divRef.current) {
+      const child = divRef.current
+      console.log(child.children[2].getBoundingClientRect().top)
+    }
+  }, [])
+
   return (
-    <React.Fragment>
+    <div ref={divRef}>
       <Hero />
       <CleaningServices />
       <About />
@@ -17,7 +26,7 @@ const Home = () => {
       <QuoteEasy />
       <ImpressiveClean />
       <Contact />
-    </React.Fragment>
+    </div>
   )
 }
 

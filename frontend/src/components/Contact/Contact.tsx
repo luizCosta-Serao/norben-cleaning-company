@@ -53,7 +53,7 @@ const Contact = () => {
   }
 
   return (
-    <section className={styles.contact}>
+    <section id='contact' className={styles.contact}> 
       <div className={styles.contactInfo}>
         <h2>Contact</h2>
         <p>Thank you for your interest. We look forward to hearing from you soon.</p>

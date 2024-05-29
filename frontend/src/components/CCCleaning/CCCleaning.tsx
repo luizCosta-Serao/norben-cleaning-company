@@ -8,7 +8,7 @@ import CarpetCleaning from '../../assets/carpet-cleaning.png'
 const CCCleaning = () => {
 
   return (
-    <section id='cleaningServices' className={styles.ccCleaning}>
+    <section id='cleaning-services' className={styles.ccCleaning}>
       <h1 className={styles.ccTitle}>CC Cleaning Services</h1>
       <p className={styles.ccDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet feugiat interdum nunc.</p>
       <ul className={styles.ccList}>
