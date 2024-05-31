@@ -31,7 +31,7 @@ const CleaningServices = () => {
       const moveSlide = ulWidth / ulChildrens
       setPosition(moveSlide * active)
     }
-  }, [active])
+  }, [active]) 
 
   React.useEffect(() => {
     function reset() {
